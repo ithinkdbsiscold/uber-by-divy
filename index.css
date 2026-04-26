@@ -1,0 +1,672 @@
+body {
+    margin: 0px;
+}
+
+.laptop {
+    padding: 0px;
+    margin: 0px;
+    min-height: 65px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    height: 35px;
+    width: 60px;
+}
+
+.childs {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 14px;
+    width: 100px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: capitalize;
+    justify-content: center;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.child2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 14px;
+    background-color: white;
+    width: 120px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: capitalize;
+    justify-content: center;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.child2:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+.parent1 {
+    display: flex;
+    flex-direction: row;
+    width: 370px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+
+.parent2 {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+
+.childs:hover {
+    background-color: rgb(35, 35, 35);
+}
+
+.ubsel {
+    background-color: black;
+    border: 0px;
+    color: white;
+}
+
+.ubsel:hover {
+    background-color: rgb(35, 35, 35);
+}
+
+.a {
+    width: 150px;
+}
+
+.mobile {
+    display: none;
+}
+
+.secondbar {
+    padding-left: 120px;
+    padding-right: 120px;
+    min-height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ride {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 23px;
+    font-weight: 700;
+    background-color: white;
+    width: auto;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: capitalize;
+    justify-content: center;
+    height: 60px;
+    cursor: pointer;
+}
+
+.ride:hover {
+    background-color: #a6a3a3;
+}
+
+.kid2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 50px;
+}
+
+.sidechild {
+    color: rgba(0, 0, 0, 0.54);
+    cursor: pointer;
+}
+
+.sidechild:hover {
+    color: black;
+}
+
+.secondbarmob {
+    display: none;
+}
+
+.midpart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.imagepart {
+    height: 580px;
+    width: 580px;
+    margin-top: 30px;
+}
+
+.bookingpart {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 500px;
+    height: 580px;
+}
+
+.addressbooking {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.changeaddress {
+    height: 20px;
+    width: 90px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.changeaddress:hover {
+    background-color: #a6a3a3;
+}
+
+.zx-select-wrap {
+    width: 220px;
+    position: relative;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.zx-select-display {
+    padding: 10px;
+    background: #e5e4e4;
+    color: rgb(4, 4, 4);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.zx-select-dropdown {
+    position: absolute;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+    display: none;
+    box-shadow: 0px 0px 10px;
+    z-index: 999;
+}
+
+.zx-select-option {
+    padding: 10px;
+    color: rgb(6, 6, 6);
+    cursor: pointer;
+}
+
+.zx-select-option:hover {
+    background: #000000;
+    color: white;
+}
+
+/* MAGIC PART */
+.zx-select-wrap:focus-within .zx-select-dropdown {
+    display: block;
+}
+
+.zx-select-option i,
+.zx-select-display i {
+    margin-right: 8px;
+}
+
+.fa-solid {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.loginbox {
+    border-radius: 8px;
+    height: 60px;
+    background: #e5e4e4;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: center;
+}
+
+.in {
+    background: #e5e4e4;
+    width: 330px;
+    margin-left: 3px;
+    height: 60px;
+}
+in::placeholder
+{
+    font-size: 20px;
+}
+.prices
+{
+    height: 50px;
+    width: 130px;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+    cursor: pointer;
+}
+.prices:hover
+{
+    background-color: #242424;
+}
+.bookingparta
+{
+    display: none;
+}
+
+@media only screen and (max-width:1220px) {
+    .midpart {
+        display: none;
+    }
+
+    .secondbar {
+        display: none;
+    }
+
+    img {
+        height: 35px;
+        width: 60px;
+    }
+
+    .parent1 {
+        display: none;
+    }
+
+    .parent2 {
+        display: none;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+    .mobile {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .secondbar {
+        display: none;
+    }
+
+    .uberxz {
+        height: 30px;
+        width: 50px;
+    }
+
+    .parent3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 190px;
+    }
+
+    .mob1 {
+        width: 70px;
+        font-weight: 600;
+    }
+
+    .mob2 {
+        width: 90px;
+        height: 35px;
+        font-weight: 600;
+    }
+
+    .btn {
+        background-color: black;
+        border: 0px;
+    }
+
+    .offcanvas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 75px;
+        right: 0;
+        color: black;
+        background-color: #a6a3a3;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 999;
+    }
+
+    .menu a {
+        padding: 15px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #020202;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .menu a:hover {
+        background-color: #010101;
+        color: #ffffff;
+    }
+
+    .content {
+        padding: 60px 20px;
+        margin-top: 60px;
+        /* Space for the fixed header */
+    }
+
+    #menu-toggle:checked+.menu {
+        width: 375px;
+    }
+
+    h1 {
+        margin: 20px;
+    }
+
+    .header {
+        height: 30px;
+        width: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .secondbarmob {
+        min-height: 40px;
+        display: contents;
+        padding: 20px;
+    }
+
+    .ridemob {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: white;
+        width: auto;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-transform: capitalize;
+        padding: 20px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    .btn {
+        color: black;
+        background-color: #ffffff;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 20px;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    #menu-toggleride {
+        display: none;
+    }
+
+
+    .menuride {
+        position: fixed;
+        top: 130px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease;
+        box-shadow: 0px 0px 5px;
+        z-index: 999;
+    }
+
+    #menu-toggleride:checked+.menuride {
+        max-height: 400px;
+    }
+
+
+    .menuride a {
+        padding: 10px 15px;
+        margin-left: 10px;
+        display: block;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .menuride a:hover {
+        background: black;
+        color: white;
+    }
+    .bookingparta {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 300px;
+    height: 500px;
+    align-items: start;
+    padding: 10px;
+    margin-left: 10px;
+}
+.addressbooking {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     font-size: 12px;
+}
+
+.changeaddress {
+    height: 20px;
+    width: 55px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 10px;
+    align-items: center;
+}
+
+.changeaddress:hover {
+    background-color: #a6a3a3;
+}
+
+.zx-select-wrap {
+    width: 220px;
+    position: relative;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.zx-select-display {
+    padding: 10px;
+    background: #e5e4e4;
+    color: rgb(4, 4, 4);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.zx-select-dropdown {
+    position: absolute;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+    display: none;
+    box-shadow: 0px 0px 10px;
+    z-index: 999;
+}
+
+.zx-select-option {
+    padding: 10px;
+    color: rgb(6, 6, 6);
+    cursor: pointer;
+}
+
+.zx-select-option:hover {
+    background: #000000;
+    color: white;
+}
+
+/* MAGIC PART */
+.zx-select-wrap:focus-within .zx-select-dropdown {
+    display: block;
+}
+
+.zx-select-option i,
+.zx-select-display i {
+    margin-right: 8px;
+}
+
+.fa-solid {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.loginbox {
+    border-radius: 8px;
+    height: 40px;
+    background: #e5e4e4;
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: center;
+}
+
+.in {
+    background: #e5e4e4;
+    width: 200px;
+    margin-left: 3px;
+    height: 40px;
+}
+in::placeholder
+{
+    font-size: 20px;
+}
+.prices
+{
+    height: 30px;
+    width: 100px;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 14px;
+    cursor: pointer;
+}
+.line {
+    height: 10px;
+    width: 100px;
+    border-left: 1px solid black;
+    position: relative;
+    left: 17px;
+    margin-top: 7px;
+    z-index: 1;
+}
+
+.bt-box {
+    position: relative;
+    margin-top: 8px;
+    
+}
+.prices:hover
+{
+    background-color: #242424;
+}
+}
+
+.line {
+    height: 80px;
+    width: 100px;
+    border-left: 1px solid black;
+    position: relative;
+    left: 17px;
+    top: -26px;
+    z-index: 1;
+}
+
+.bt-box {
+    position: relative;
+    top: -50px;
+    
+}
